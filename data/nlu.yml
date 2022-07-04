@@ -16,6 +16,21 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    
+- intent: check_covid
+  examples: |
+    -do i have covid
+    -do i have corona
+    -am i affected with covid
+    -do i have covid positive
+    
+- intent: symptom1
+  examples: |
+    - i have mild fever     
+    - i have fever
+    - i have slight fever
+    - i am feeling feverish
+  
 
 - intent: goodbye
   examples: |

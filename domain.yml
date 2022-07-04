@@ -8,7 +8,9 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - check_covid
+  - symptom1
+  
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -28,6 +30,12 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  
+  utter_check_covid:
+  - text: "what are your symptoms?"
+  
+  utter_symptom1: 
+  - text: "Do you have fever and chest pain?"
 
 session_config:
   session_expiration_time: 60

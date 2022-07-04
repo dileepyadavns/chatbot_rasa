@@ -12,7 +12,13 @@ stories:
       amazing
     intent: mood_great
   - action: utter_happy
-
+- story: covid path
+  steps:
+  - user: |
+      -do i have covid
+    intent: covid_check
+  - action: utter_covid_check
+  
 - story: happy path 2
   steps:
   - user: |
