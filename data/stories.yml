@@ -18,16 +18,6 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-  
-- story: covid path 1
-  steps:
-  - intent: check_covid
-  - action: utter_check_covid
-  - intent: symptom1
-  - action: utter_symptom1
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy  
 
 - story: sad path 2
   steps:
@@ -38,3 +28,23 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: covid path1
+  steps:
+  - intent: covid_intro
+  - action: utter_covid_intro
+
+- story: covid spread1
+  steps: 
+  - intent: covid_spread
+  - action: utter_covid_spread
+
+- story: covid path2
+  steps:
+  - intent: corona_food_spread   
+  - action: utter_corona_food_spread 
+
+- story: covid path3
+  steps:
+  - intent: corona_spread_warm
+  - action: utter_corona_spread_warm
