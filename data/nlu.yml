@@ -135,3 +135,77 @@ nlu:
     - how warm weather stop corona
     - how warm weather can stop corona
     - how corona spreads in warm weather    
+
+- intent: corona_spread_risk
+  examples: |
+    - who is at higher risk of infection
+    - who is more prone to get corona virus infection
+
+- intent: corona_community
+  examples: |
+    - what is community spread?
+    - how does community spread occurs?
+    - community spread
+
+- intent: corona_symptoms
+  examples: |
+    - What are the symptoms of novel coronavirus?
+    - What are the symptoms of novel corona virus?
+    - What are the symptoms of novel covid-19 virus?
+    - What are the symptoms of corona virus?
+    - symptoms of corona virus?
+    - symptoms of covid19 virus?
+
+- intent: corona_mosq_spread
+  examples: |
+    - can mosquitoes spread corona virus?
+    - how does mosquitoes spread corona virus?
+    - mosquitoes spread covid-19 virus.
+    - mosquitoes spread covid virus.
+
+- intent: corona_vaccine
+  examples: |
+    - Are there any vaccines available for prevention of corona virus?
+    - Are there any vaccines available for prevention of covid19 virus?
+    - what about vaccines available for prevention of corona virus?
+    - vaccines available for prevention of corona virus?
+    - Have the vaccines been developed for corona virus?
+    - is there any vaccine for corona virus?
+    - is there any vaccine for covid19 virus?
+
+
+- intent: corona_prevent
+  examples: |
+    - how can i prevent covid19?
+    - how can i prevent corona virus?
+    - how can i prevent covid-19?
+    - prevent covid19?
+    - prevent corona
+    - how once can prevent himself/herself from getting infected from covid19?
+    - how once can prevent himself/herself from getting infected from corona?
+
+- intent: corona_infected person
+  examples: |
+    - If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19
+    - If You or Someone You Know is Sick or Had Contact with Someone who Has corona?
+    - what should i do if someone in my house gets infected by corona?
+    - what should i do if someone in my house gets infected by covid-19?
+    - someone gets covid-19 i know?
+    - my family member gets infected by corona?
+    - someone gets infected by corona i know?
+    - someone gets infected by corona i was in contact with?
+    - someone gets infected by covid i was in contact with?
+    - what to do if someone gets infected by covid i was in contact with?
+    - how to handle infected person
+    - covid handle
+    - how to handle someone
+    - how to handle
+
+- intent: corona_stats_check
+  examples: |
+    - Corona stats
+    - i want to check corona statistics
+    - corona tracker
+    - corona stats
+    - covid tracker
+    - covid stats

@@ -48,3 +48,34 @@ stories:
   steps:
   - intent: corona_spread_warm
   - action: utter_corona_spread_warm
+
+- story: corona community spread path
+  steps:
+  - intent: corona_community
+  - action: utter_corona_community
+
+
+- story: corona symptoms path
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: corona mosquito path
+  steps:
+  - intent: corona_mosq_spread
+  - action: utter_corona_mosq_spread
+
+- story: corona prevent path
+  steps:
+  - intent: corona_prevent
+  - action: utter_corona_prevent  
+
+- story: corona vaccine path
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine  
+
+- story: corona infected path
+  steps:
+  - intent: corona_infected person
+  - action: utter_corona_infected person  
