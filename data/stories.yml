@@ -79,3 +79,8 @@ stories:
   steps:
   - intent: corona_infected person
   - action: utter_corona_infected person  
+
+- story: covid state wise tracker path
+  steps:
+  - intent: corona_statewise_cases
+  - action: action_corona_statewise_cases  

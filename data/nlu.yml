@@ -209,3 +209,29 @@ nlu:
     - corona stats
     - covid tracker
     - covid stats
+
+- intent: corona_statewise_cases
+  examples: |
+    - [india](state)
+    - [Telangana](state)
+    - [Andhra Pradesh](state)
+    - [Maharashtra](state)
+    - [Madhya Pradesh](state)
+    - [Karnataka](state)
+    - [Tamil Nadu](state)
+    - [Kerala](state)
+    - [orissa](state)
+    - [Chattisgarh](state)
+    - [Goa](state)
+    - [Bihar](state)
+    - [Delhi](state)
+    - [Manipur](state)
+    - [Meghalaya](state)
+    - [Mizoram](state)
+    - [Nagaland](state)
+    - [Odisha](state)
+    - [Punjab](state)
+    - [Rajasthan](state)
+    - [Sikkim](state)
+    - [Jharkhand](state)
+

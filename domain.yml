@@ -20,7 +20,21 @@ intents:
   - corona_vaccine
   - corona_infected person
   - corona_stats_check
+  - corona_statewise_cases
+
+actions:
+  - action_corona_statewise_cases
+
+entities:
+  - state
   
+slots:
+  state:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: state
+    
 responses:
   utter_greet:
   - text: "Hey! How are you?"

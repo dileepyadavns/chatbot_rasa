@@ -7,10 +7,11 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
-# from typing import Any, Text, Dict, List
+from typing import Any, Text, Dict, List
 #
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
+import requests
 #
 #
 # class ActionHelloWorld(Action):
@@ -25,3 +26,33 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+
+class ActionCoronaCases(Action):
+    try:
+        def name(self) -> Text:
+         return "action_corona_statewise_cases"
+
+        def run(self, dispatcher: CollectingDispatcher,
+
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+         response=requests.get("https://data.covid19india.org/data.json").json()
+         entities=tracker.latest_message['entities']
+         print("Last message Now",entities)
+         state=None
+         for e in entities:
+             if e["entity"]=="state":
+                state=e["value"]
+         message="please enter valid state in india "
+         for data in response["statewise"]:
+             if data["state"]==state.title():
+                 print(data)
+                 message="Active: "+ data["active"]+"  Conformed: "+ data["confirmed"]+"  Recovered: "+ data["deltarecovered"] +" On: " + data["lastupdatedtime"]
+
+
+
+         dispatcher.utter_message(message)
+         return []
+    except:
+        pass
