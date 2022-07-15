@@ -80,7 +80,36 @@ stories:
   - intent: corona_infected person
   - action: utter_corona_infected person  
 
-- story: covid state wise tracker path
+- story: corona tracker path
   steps:
-  - intent: corona_statewise_cases
-  - action: action_corona_statewise_cases  
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_stats_check
+  - action: utter_corona_stats_check
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat
+
+- story: corona tracker 2 path
+  steps:
+  - intent: corona_stats_check
+  - action: utter_corona_stats_check
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat
+
+- story: thanks path
+  steps:
+  - intent: Thanks
+  - action: utter_Thanks
+
+- story: covid path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: globalcovid_pandemic
+  - action: utter_globalcovid_pandemic
+  - intent: COVID_Description
+  - action: utter_covid_description
+  - intent: Testing_information
+  - action: utter_testing_information
+  - intent: Treatment_info
+  - action: utter_treatment_info

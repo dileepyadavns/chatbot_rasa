@@ -141,11 +141,11 @@ nlu:
     - who is at higher risk of infection
     - who is more prone to get corona virus infection
 
-- intent: corona_community
-  examples: |
-    - what is community spread?
-    - how does community spread occurs?
-    - community spread
+# - intent: corona_community
+#   examples: |
+#     - what is community spread?
+#     - how does community spread occurs?
+#     - community spread
 
 - intent: corona_symptoms
   examples: |
@@ -210,7 +210,7 @@ nlu:
     - covid tracker
     - covid stats
 
-- intent: corona_statewise_cases
+- intent: corona_states_stat
   examples: |
     - [india](state)
     - [Telangana](state)
@@ -235,3 +235,137 @@ nlu:
     - [Sikkim](state)
     - [Jharkhand](state)
 
+
+- intent: name_entry
+  examples: |
+    - My name is [Ashish](name)
+    - [ashish](name:Ashish) this side
+    - It's [ashish](name:Ashish)
+    - [ashish](name:Ashish) is my name
+    - [Ashish](name)
+    - [Rahul](name)
+    - [ashish](name:Ashish)
+    - My name is [Harsh](name)
+    - [harsh](name:Harsh) this side
+    - It's [harsh](name:Harsh)
+    - [harsh](name:Harsh) is my name
+    - [Harsh](name)
+    - [Rahul](name)
+    - [harsh](name:Harsh)
+    - It is [Tom](name)
+    - My name is [Bob](name)
+    - my name is [Harsh](name)
+    - name is [Rajesh](name)
+    - my name is [demo](name)
+    - name is [demo](name)
+    - I am [Harsh](name)
+    - I am [Nandan](name)
+    - I am [demo](name)
+    - myself [Harsh](name)
+    - myself [demo](name)
+
+
+- intent: Thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot
+    - thank you so much
+
+- intent: globalcovid_pandemic
+  examples: |
+    - How is a pandemic different from an epidemic?
+    -	What is a pandemic?
+    -	What does a pandemic mean?
+    -	The WHO has declared a pandemic in the world. What does this mean?
+
+- intent: COVID_Description
+  examples: |
+    - What'is Corona Virus
+    - covid what is it
+    - What is covid
+    - what is covid-19
+    - What does covid stand for?
+    - Is covid a disease?
+    - where did covid come from?
+    - I heard about covid what is it?
+    - Where can I learn more about covid?
+    - Where can I find more information about covid 19?
+    - 2019-nCoV
+    - origin of coronavirus
+    - does the virus spread thru surfaces
+    - how does the virus spread
+    - Where did the coronavirus come from?
+    - what is the coronavirus?
+    - what is novel coronavirus?
+    - What is COVID-19?
+    - How dangerous is this?
+    - Has the cause of COVID-19 been identified?
+    - How is COVID-19 spread?
+    - What is corona virus
+    - What is Corona virus?
+    - what is the Corona Virus
+    - what is the corona virus?
+    - where did corona virus start from?
+    - what is covid-19
+    - what is covid19
+    - What is COVID?
+
+- intent: Testing_information
+  examples: |
+    - Is the covid test able to detect infection even during the incubation period?
+    - can i get tested
+    - ok - I've got enough of those that I think I need to get tested.
+    - my friend has it should i t get tested
+    - is there test kit for coronavirus
+    - Is there a test kit for the coronavirus?
+    - is there a test kit for the coronavirus
+    - is there a test kit for coronavirus
+    - is there a test for the coronavirus
+    - Is there a test for teh coronavirus
+    - is there a test for coronavirus
+    - is there a coronavirus test kit
+    - Can I get tested at home?
+    - Is it possible to test for covid 19 during the incubation period?
+    - Is it possible to detect the disease during the incubation period?
+    - I have symptoms. Should I get tested?
+    - "I have a fever, should I get tested?"
+    - do i need to get tested?
+    - coronavirus test kit
+    - Can I test myself?
+    - can i get tested?
+    - can I get tested quickly?
+    - can i get tested for cover?
+    - When is the coronavirus test able to detect the disease?
+    - What is the test to detect covid 19?
+    - Should we get tested if we only have symptoms
+    - should i get tested if I do not have symptoms but think I've been exposed?
+    - Should I get tested for COVID-19?
+
+
+- intent: Treatment_info
+  examples: |
+    - How can I lower my temperature if I have the coronavirus?
+    - can medication reduce fever caused by a possible covid infection?
+    - Can medication be used to reduce fever?
+    - what medicines should I take if I have coronavirus
+    - what medicine work best for treatment ?
+    - What medicine should I take for COVID 19
+    - what medicine should I be taking for Covid 19
+    - What medicine should I avoid taking if I have coronavirus
+    - what kind of medicine should I take
+    - What is the treatment for this disease?- intent: Treatment_info
+    - Can I take ibuprofen if I have corona virus?
+    - What is the treatment for covid-19?
+    - Should I take Theraflu?
+    - Medication that helps with coronavirus
+    - Is there a medication to reduce temperature with covid-19?
+    - Is there a medication that can help me feel better?
+    - I heard about a medication for coronavirus treatment
+    - How to treat covid?
+    - best vitamin to take
+    - Can I lower my temperature using medication?
+    - what medicines work best
+    - How do we treat covid?
+    - How do I treat coronavirus?

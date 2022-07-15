@@ -20,12 +20,19 @@ intents:
   - corona_vaccine
   - corona_infected person
   - corona_stats_check
-  - corona_statewise_cases
+  - corona_states_stat
+  - Thanks
+  - globalcovid_pandemic
+  - COVID_Description
+  - Testing_information
+  - Treatment_info
+  #- name_entry
 
 actions:
-  - action_corona_statewise_cases
+  - actions_corona_state_stat
 
 entities:
+  - name
   - state
   
 slots:
@@ -34,7 +41,11 @@ slots:
     mappings:
     - type: from_entity
       entity: state
+
+
     
+
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -101,6 +112,26 @@ responses:
 
   utter_corona_infected person:
   - text: "Stay home for 14 days after your last contact with a person who has COVID-19.\nBe alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.\nIf possible, stay away from others, especially people who are at higher risk for getting very sick from COVID-19."
+  
+
+  utter_corona_stats_check:
+  - text: "Covid-19 Tracker [India] :\nPlease Enter the State name you wish to see the Covid-19 Statistics : "
+  
+  utter_Thanks:
+  - text: "Your Welcome . Glad I could be of some help!\nJust type 'hey' or 'hi' again to redirect to the main phase of bot ! :))"
+  
+  utter_globalcovid_pandemic:
+  - text: "A pandemic is the worldwide spread of a new disease,COVID-19. An epidemic, is when many more cases of a health condition occur than expected in a certain region, but it does not spread further"
+
+  utter_covid_description:
+  - text: "Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus were discovered in Wuhan, China."
+ 
+  utter_testing_information:
+  - text: "Available test:- PCR test, also called a molecular test or polymerase chain reaction test, detects genetic material specific to the virus that causes COVID-19.It is often more accurate than a rapid test, especially in individuals without symptoms"
+  
+  utter_treatment_info:
+  - text: "If you test positive. please consult the doctor for medication immediately. Use medicines under proper guidence"
+
 
 session_config:
   session_expiration_time: 60
